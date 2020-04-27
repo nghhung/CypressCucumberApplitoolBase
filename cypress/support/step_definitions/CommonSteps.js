@@ -11,12 +11,17 @@ beforeEach(function () {
     })
 
     console.log('Start test')
+    cy.eyesOpen({
+      appName: 'Hello World!',
+      testName: `My first JavaScript test!`
+    });
   })
   
   afterEach(function () {
     cy.log('End testing..........')
     cy.clearLocalStorage()
     cy.clearCookies()
+    cy.eyesClose();
     // cy.reload(true)
   })
   
