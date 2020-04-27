@@ -1,0 +1,14 @@
+{
+    "ignoreTestFiles": "*.js",
+  "testFiles": "**/*.{feature,features}",
+  "defaultCommandTimeout": 50000,
+  "env": {
+    "env": "staging"
+  },
+  "viewportHeight": 1080,
+  "viewportWidth": 1920,
+  "requestTimeout": 50000,
+  "baseUrl": "https://ductri-admin-web-staging.enouvo.com/login",
+  "watchForFileChanges": false,
+  "chromeWebSecurity": false
+}

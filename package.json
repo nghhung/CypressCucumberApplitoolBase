@@ -1,0 +1,22 @@
+{
+  "name": "cypress_cucumber_base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@applitools/eyes-cypress": "^3.10.2",
+    "cypress": "^4.4.1",
+    "cypress-cucumber-preprocessor": "^2.3.1",
+    "cypress-xpath": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cypress run --spec \"**/*.feature\"",
+    "test:all": "cypress run --spec \"**/*.features\""
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/step_definitions/"
+  },
+  "author": "Bi Nguyen",
+  "license": "ISC"
+}
